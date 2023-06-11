@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="0.1"
+    android:installLocation="2"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="com.DefaultCompany.BrackeysTutorial"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="28" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x7f040001"
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000"
+        android:banner="@ref/0x7f010000"
+        android:isGame="true">
+
+        <activity
+            android:label="@ref/0x7f030000"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:launchMode="2"
+            android:screenOrientation="10"
+            android:configChanges="0x40003fff"
+            android:hardwareAccelerated="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+        </activity>
+
+        <meta-data
+            android:name="unity.build-id"
+            android:value="ebd0cf3a-b863-4050-a511-0dc524458715" />
+
+        <meta-data
+            android:name="unity.splash-mode"
+            android:value="0" />
+
+        <meta-data
+            android:name="unity.splash-enable"
+            android:value="true" />
+    </application>
+</manifest>
